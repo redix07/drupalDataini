@@ -1,0 +1,2148 @@
+array(
+  (object) array(
+      'vid' => '106',
+      'uid' => '1',
+      'title' => 'Kontakt',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => 'f6d8f557-d55e-4634-be49-f3c256032c1a',
+      'nid' => '106',
+      'type' => 'webform',
+      'language' => 'pl',
+      'created' => '1480673660',
+      'changed' => '1480673827',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'b432abe4-73ea-4b50-bed7-accd7810f093',
+      'revision_timestamp' => '1480673827',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'adres',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>adres</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '141',
+        'source' => 'node/106',
+        'alias' => 'web/kontakt.html',
+        'language' => 'pl',
+      ),
+      'webform' => array(
+        'nid' => '106',
+        'next_serial' => '1',
+        'confirmation' => '',
+        'confirmation_format' => NULL,
+        'redirect_url' => '<confirmation>',
+        'status' => '1',
+        'block' => '0',
+        'allow_draft' => '0',
+        'auto_save' => '0',
+        'submit_notice' => '1',
+        'confidential' => '0',
+        'submit_text' => '',
+        'submit_limit' => '-1',
+        'submit_interval' => '-1',
+        'total_submit_limit' => '-1',
+        'total_submit_interval' => '-1',
+        'progressbar_bar' => '1',
+        'progressbar_page_number' => '0',
+        'progressbar_percent' => '0',
+        'progressbar_pagebreak_labels' => '1',
+        'progressbar_include_confirmation' => '1',
+        'progressbar_label_first' => 'Start',
+        'progressbar_label_confirmation' => 'Complete',
+        'preview' => '0',
+        'preview_next_button_label' => '',
+        'preview_prev_button_label' => '',
+        'preview_title' => '',
+        'preview_message' => '',
+        'preview_message_format' => NULL,
+        'preview_excluded_components' => array(),
+        'record_exists' => TRUE,
+        'roles' => array(
+          '1',
+          '2',
+        ),
+        'emails' => array(),
+        'components' => array(
+          1 => array(
+            'nid' => 106,
+            'cid' => '1',
+            'pid' => '0',
+            'form_key' => 'name',
+            'name' => 'Name',
+            'type' => 'textfield',
+            'value' => '',
+            'extra' => array(
+              'title_display' => 'none',
+              'description_above' => 0,
+              'private' => 0,
+              'wrapper_classes' => '',
+              'css_classes' => 'form-control',
+              'placeholder' => 'name',
+              'width' => '',
+              'maxlength' => '',
+              'field_prefix' => '',
+              'field_suffix' => '',
+              'disabled' => 0,
+              'unique' => 0,
+              'description' => '',
+              'attributes' => array(),
+              'analysis' => FALSE,
+            ),
+            'required' => '1',
+            'weight' => '0',
+            'page_num' => 1,
+          ),
+          2 => array(
+            'nid' => 106,
+            'cid' => '2',
+            'pid' => '0',
+            'form_key' => 'email',
+            'name' => 'Email',
+            'type' => 'email',
+            'value' => '',
+            'extra' => array(
+              'title_display' => 'none',
+              'description_above' => 0,
+              'private' => 0,
+              'wrapper_classes' => '',
+              'css_classes' => 'form-control',
+              'placeholder' => 'Email',
+              'multiple' => 0,
+              'format' => 'short',
+              'width' => '',
+              'unique' => 0,
+              'disabled' => 0,
+              'description' => '',
+              'attributes' => array(),
+              'analysis' => FALSE,
+            ),
+            'required' => '1',
+            'weight' => '1',
+            'page_num' => 1,
+          ),
+          3 => array(
+            'nid' => 106,
+            'cid' => '3',
+            'pid' => '0',
+            'form_key' => 'message',
+            'name' => 'Message',
+            'type' => 'textarea',
+            'value' => '',
+            'extra' => array(
+              'title_display' => 'none',
+              'description_above' => 0,
+              'private' => 0,
+              'wrapper_classes' => '',
+              'css_classes' => 'form-control',
+              'resizable' => 0,
+              'placeholder' => 'message',
+              'cols' => '',
+              'rows' => '',
+              'disabled' => 0,
+              'description' => '',
+              'attributes' => array(),
+              'analysis' => FALSE,
+            ),
+            'required' => '1',
+            'weight' => '2',
+            'page_num' => 1,
+          ),
+        ),
+        'conditionals' => array(),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480673660',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '103',
+      'uid' => '0',
+      'title' => 'Esca',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '96cbf892-4c71-4b56-bf60-45bcf063f395',
+      'nid' => '103',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1464527632',
+      'changed' => '1480673614',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '6dbd6cb7-6a8f-4162-bd1c-c2fb8caa8c54',
+      'revision_timestamp' => '1480673614',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Eum ideo tincidunt voco. Genitus nunc os plaga quadrum qui suscipit. Aptent brevitas comis enim iustum probo vel vereor.\r\n\r\nAt brevitas esca haero inhibeo interdico metuo modo oppeto vulputate. Caecus commodo commoveo immitto occuro validus. Consectetuer et jus melior nimis suscipere. Erat ibidem probo qui similis. Capto nimis refero singularis validus vulpes. Decet ea roto sagaciter suscipere vereor virtus.\r\n\r\nDiam esca humo paulatim zelus. Incassum nutus populus. Blandit gilvus hos nisl. Camur esca ideo nimis velit.\r\n\r\nConsequat gemino huic inhibeo laoreet suscipere valde. Comis esca immitto nimis patria verto voco. Esse exputo haero lobortis pagus quadrum refoveo volutpat. Cui esca facilisis macto saepius torqueo ulciscor. Cogo euismod exerci importunus luctus metuo occuro similis vulpes. Consequat cui praemitto suscipere. Feugiat genitus in. Abluo appellatio bene ex ille ludus.\r\n\r\n",
+            'summary' => '',
+            'format' => 'plain_text',
+            'safe_value' => "<p>Eum ideo tincidunt voco. Genitus nunc os plaga quadrum qui suscipit. Aptent brevitas comis enim iustum probo vel vereor.</p>\n<p>At brevitas esca haero inhibeo interdico metuo modo oppeto vulputate. Caecus commodo commoveo immitto occuro validus. Consectetuer et jus melior nimis suscipere. Erat ibidem probo qui similis. Capto nimis refero singularis validus vulpes. Decet ea roto sagaciter suscipere vereor virtus.</p>\n<p>Diam esca humo paulatim zelus. Incassum nutus populus. Blandit gilvus hos nisl. Camur esca ideo nimis velit.</p>\n<p>Consequat gemino huic inhibeo laoreet suscipere valde. Comis esca immitto nimis patria verto voco. Esse exputo haero lobortis pagus quadrum refoveo volutpat. Cui esca facilisis macto saepius torqueo ulciscor. Cogo euismod exerci importunus luctus metuo occuro similis vulpes. Consequat cui praemitto suscipere. Feugiat genitus in. Abluo appellatio bene ex ille ludus.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '78',
+            'uid' => '1',
+            'filename' => 'landscape-wallpaper-16.jpg',
+            'uri' => 'public://news/landscape-wallpaper-16.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '344331',
+            'status' => '1',
+            'timestamp' => '1480673244',
+            'uuid' => 'c1cd95a7-0b20-4997-b358-b8c9418f50f6',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '1920',
+            'height' => '1080',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '135',
+        'source' => 'node/103',
+        'alias' => 'news/esca.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '0',
+      'comment_count' => '0',
+      'name' => '',
+      'picture' => '0',
+      'data' => NULL,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '104',
+      'uid' => '1',
+      'title' => 'Appellatio',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => 'de11e2cb-8707-4818-aaaf-82ed9b111662',
+      'nid' => '104',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1462915626',
+      'changed' => '1480673609',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '540ac4f7-6c58-424a-8a77-843c99e8bddb',
+      'revision_timestamp' => '1480673609',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Gilvus melior oppeto qui valetudo venio. Ea jugis luptatum pecus. Dignissim lobortis mauris velit.\r\n\r\nCamur enim immitto nulla paratus probo typicus vicis. Caecus dignissim et eum exerci laoreet roto valde verto. Commoveo dolus iusto magna proprius quadrum ullamcorper valetudo.\r\n\r\nBrevitas distineo pecus rusticus vindico. Aliquip conventio dolor humo laoreet modo roto valetudo. Ludus pecus quadrum. Erat esse huic ideo letalis nostrud populus quae similis. Ad facilisi gemino humo mos probo proprius utinam. Causa dignissim eu ex obruo.\r\n\r\nCapto eu haero natu nobis sudo utrum. Abigo ad brevitas cui dolor natu nostrud quis sino. At mos nutus premo valetudo vicis vindico.\r\n\r\nAdipiscing gemino iusto scisco. At eligo haero ille in lobortis ratis sagaciter suscipit validus. Amet conventio dolore eum in iriure quidem vel. Abigo cui exputo haero ideo nisl persto tation turpis valde. Decet lenis pecus suscipit. Appellatio iaceo immitto lobortis pala paratus sudo. Bene cui inhibeo iusto laoreet.\r\n\r\nAntehabeo exerci neque quis verto. Autem caecus gemino genitus lobortis praesent quibus vindico. Commodo molior te. Abigo incassum populus rusticus volutpat. Abluo gravis humo magna rusticus. Defui ibidem quadrum validus velit verto. Dolor et incassum paulatim populus quia similis suscipere valetudo vereor.\r\n\r\nAbico augue gemino imputo premo refoveo ullamcorper. Bene dolore tincidunt. Huic nobis ratis sagaciter sed vel vindico. Exerci genitus ideo iriure paulatim tamen utrum. Elit eros jus loquor patria premo suscipit uxor. Augue praemitto sudo utinam wisi zelus. Abbas dolore duis esse luptatum pertineo premo quia usitas.\r\n\r\nAbluo facilisis incassum jumentum lobortis occuro praemitto tamen. Commoveo eros feugiat lucidus meus nisl oppeto.\r\n\r\n",
+            'summary' => '',
+            'format' => 'full_html',
+            'safe_value' => "<p>Gilvus melior oppeto qui valetudo venio. Ea jugis luptatum pecus. Dignissim lobortis mauris velit.</p>\n<p>Camur enim immitto nulla paratus probo typicus vicis. Caecus dignissim et eum exerci laoreet roto valde verto. Commoveo dolus iusto magna proprius quadrum ullamcorper valetudo.</p>\n<p>Brevitas distineo pecus rusticus vindico. Aliquip conventio dolor humo laoreet modo roto valetudo. Ludus pecus quadrum. Erat esse huic ideo letalis nostrud populus quae similis. Ad facilisi gemino humo mos probo proprius utinam. Causa dignissim eu ex obruo.</p>\n<p>Capto eu haero natu nobis sudo utrum. Abigo ad brevitas cui dolor natu nostrud quis sino. At mos nutus premo valetudo vicis vindico.</p>\n<p>Adipiscing gemino iusto scisco. At eligo haero ille in lobortis ratis sagaciter suscipit validus. Amet conventio dolore eum in iriure quidem vel. Abigo cui exputo haero ideo nisl persto tation turpis valde. Decet lenis pecus suscipit. Appellatio iaceo immitto lobortis pala paratus sudo. Bene cui inhibeo iusto laoreet.</p>\n<p>Antehabeo exerci neque quis verto. Autem caecus gemino genitus lobortis praesent quibus vindico. Commodo molior te. Abigo incassum populus rusticus volutpat. Abluo gravis humo magna rusticus. Defui ibidem quadrum validus velit verto. Dolor et incassum paulatim populus quia similis suscipere valetudo vereor.</p>\n<p>Abico augue gemino imputo premo refoveo ullamcorper. Bene dolore tincidunt. Huic nobis ratis sagaciter sed vel vindico. Exerci genitus ideo iriure paulatim tamen utrum. Elit eros jus loquor patria premo suscipit uxor. Augue praemitto sudo utinam wisi zelus. Abbas dolore duis esse luptatum pertineo premo quia usitas.</p>\n<p>Abluo facilisis incassum jumentum lobortis occuro praemitto tamen. Commoveo eros feugiat lucidus meus nisl oppeto.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '93',
+            'uid' => '1',
+            'filename' => 'landscape-photography-tutorial-mtcook-after.jpg',
+            'uri' => 'public://news/landscape-photography-tutorial-mtcook-after_1.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '308653',
+            'status' => '1',
+            'timestamp' => '1480673477',
+            'uuid' => '9b9a5466-01b7-4afd-9790-8783fe87c39c',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '1020',
+            'height' => '681',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '138',
+        'source' => 'node/104',
+        'alias' => 'news/appellatio.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '102',
+      'uid' => '1',
+      'title' => 'Defui Pala',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '300cc48d-ac81-43c6-9bf2-93f428a5b2cd',
+      'nid' => '102',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1467735350',
+      'changed' => '1480673606',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '21c1f9ff-0b9e-4007-9aa7-758b509d1413',
+      'revision_timestamp' => '1480673606',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Abluo ad dignissim eligo facilisi jus paulatim te veniam. Gravis luptatum meus pala quae ratis. Diam natu praemitto ratis sino tum voco.\r\n\r\nCapto dolus euismod feugiat incassum laoreet lobortis utinam vel vicis. Conventio duis modo paulatim pecus roto te zelus.\r\n\r\nAbico appellatio commodo commoveo consectetuer erat praemitto premo quae ullamcorper.\r\n\r\nAbbas facilisis nunc si. Brevitas ex exputo jumentum nisl obruo odio vulpes. Haero in iusto nisl obruo populus refoveo sagaciter vindico ymo. Illum iriure meus quadrum qui suscipere velit vicis. Appellatio decet ea genitus melior natu paratus typicus vicis virtus. Bene exputo facilisis nutus quae wisi. Antehabeo ea facilisi quia rusticus similis. Abdo ad dolore exerci feugiat haero pala paratus quadrum.\r\n\r\nAccumsan amet defui dignissim et obruo quidem tum ulciscor. Huic minim molior neque proprius validus verto. Dignissim facilisis ille neo persto praesent quis scisco valetudo venio. Inhibeo nostrud nulla oppeto roto sit vindico zelus. Brevitas exputo gravis ideo melior utinam. Caecus iustum luptatum praemitto quia quis roto.\r\n\r\nAccumsan distineo nutus premo saluto ullamcorper. Autem distineo laoreet letalis pala suscipit turpis typicus. Damnum lobortis qui refero. Causa damnum dignissim luptatum macto ulciscor. Eligo pala singularis vulputate wisi. Antehabeo blandit consequat genitus luptatum tincidunt vindico. Bene comis consequat elit ex luptatum nulla sino. Abbas damnum plaga si. Aptent capto inhibeo minim nutus pertineo secundum uxor volutpat.\r\n\r\nImportunus nutus vereor. Eu luptatum magna vero vulpes. Acsi ad decet dignissim macto voco ymo. Euismod gravis laoreet obruo populus quia. Jus pecus pneum.\r\n\r\n",
+            'summary' => '',
+            'format' => 'plain_text',
+            'safe_value' => "<p>Abluo ad dignissim eligo facilisi jus paulatim te veniam. Gravis luptatum meus pala quae ratis. Diam natu praemitto ratis sino tum voco.</p>\n<p>Capto dolus euismod feugiat incassum laoreet lobortis utinam vel vicis. Conventio duis modo paulatim pecus roto te zelus.</p>\n<p>Abico appellatio commodo commoveo consectetuer erat praemitto premo quae ullamcorper.</p>\n<p>Abbas facilisis nunc si. Brevitas ex exputo jumentum nisl obruo odio vulpes. Haero in iusto nisl obruo populus refoveo sagaciter vindico ymo. Illum iriure meus quadrum qui suscipere velit vicis. Appellatio decet ea genitus melior natu paratus typicus vicis virtus. Bene exputo facilisis nutus quae wisi. Antehabeo ea facilisi quia rusticus similis. Abdo ad dolore exerci feugiat haero pala paratus quadrum.</p>\n<p>Accumsan amet defui dignissim et obruo quidem tum ulciscor. Huic minim molior neque proprius validus verto. Dignissim facilisis ille neo persto praesent quis scisco valetudo venio. Inhibeo nostrud nulla oppeto roto sit vindico zelus. Brevitas exputo gravis ideo melior utinam. Caecus iustum luptatum praemitto quia quis roto.</p>\n<p>Accumsan distineo nutus premo saluto ullamcorper. Autem distineo laoreet letalis pala suscipit turpis typicus. Damnum lobortis qui refero. Causa damnum dignissim luptatum macto ulciscor. Eligo pala singularis vulputate wisi. Antehabeo blandit consequat genitus luptatum tincidunt vindico. Bene comis consequat elit ex luptatum nulla sino. Abbas damnum plaga si. Aptent capto inhibeo minim nutus pertineo secundum uxor volutpat.</p>\n<p>Importunus nutus vereor. Eu luptatum magna vero vulpes. Acsi ad decet dignissim macto voco ymo. Euismod gravis laoreet obruo populus quia. Jus pecus pneum.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '92',
+            'uid' => '1',
+            'filename' => 'landscape-wallpaper-16.jpg',
+            'uri' => 'public://news/landscape-wallpaper-16_1.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '344331',
+            'status' => '1',
+            'timestamp' => '1480673465',
+            'uuid' => 'e84ca352-1797-4cb2-a4ed-4179267dee17',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '1920',
+            'height' => '1080',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '133',
+        'source' => 'node/102',
+        'alias' => 'news/defui-pala.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '101',
+      'uid' => '0',
+      'title' => 'Jugis Os',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '8c905f0d-46aa-4789-aa73-759d25e9ec53',
+      'nid' => '101',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1479160438',
+      'changed' => '1480673601',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'e0af0002-d523-4a40-9f9f-878219709754',
+      'revision_timestamp' => '1480673601',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Hos letalis mauris probo utrum. Aptent consectetuer duis modo obruo scisco uxor wisi. Bene duis mos vereor vero. Abico abluo esca ideo nisl quis similis veniam. Fere sudo suscipit tego wisi zelus. Camur commodo defui ille incassum iusto nobis refero sagaciter vel.\r\n\r\nAcsi capto commodo consequat huic melior modo mos volutpat. Bene immitto metuo meus quae typicus vel. Caecus dolus euismod humo iaceo letalis praesent torqueo vindico. Abluo at comis esca immitto metuo wisi. Acsi imputo meus nulla sudo valetudo vereor virtus. Abdo exerci ut. Et exputo gravis in incassum meus nimis sit tamen. Plaga pneum probo quia refero sed veniam virtus zelus.\r\n\r\nCapto damnum ex imputo. Adipiscing at defui iaceo inhibeo lobortis paratus quibus sed zelus. Ad adipiscing bene dolus neo olim praemitto. Abbas abigo lucidus virtus vulputate. Dignissim dolus ea patria paulatim rusticus secundum turpis. Cogo conventio iriure lobortis si ullamcorper. Diam hendrerit praesent quia typicus vero zelus. Amet comis eu ibidem nunc paratus quibus quis sagaciter.\r\n\r\nAt meus nibh nunc. Letalis odio sed. Ad cogo comis gilvus immitto pecus utinam. Commodo consequat euismod. Causa eum hos illum jus oppeto similis suscipit vicis. Aliquip camur hos laoreet lenis premo sed valetudo.\r\n\r\nAbigo aptent ille iustum paratus. Appellatio dolor nibh nunc scisco similis. Augue brevitas commodo consequat jumentum pertineo quis tego. Antehabeo consequat et luctus macto quis. Accumsan decet facilisis ibidem jumentum lenis lobortis mos vereor.\r\n\r\n",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Hos letalis mauris probo utrum. Aptent consectetuer duis modo obruo scisco uxor wisi. Bene duis mos vereor vero. Abico abluo esca ideo nisl quis similis veniam. Fere sudo suscipit tego wisi zelus. Camur commodo defui ille incassum iusto nobis refero sagaciter vel.</p>\n<p>Acsi capto commodo consequat huic melior modo mos volutpat. Bene immitto metuo meus quae typicus vel. Caecus dolus euismod humo iaceo letalis praesent torqueo vindico. Abluo at comis esca immitto metuo wisi. Acsi imputo meus nulla sudo valetudo vereor virtus. Abdo exerci ut. Et exputo gravis in incassum meus nimis sit tamen. Plaga pneum probo quia refero sed veniam virtus zelus.</p>\n<p>Capto damnum ex imputo. Adipiscing at defui iaceo inhibeo lobortis paratus quibus sed zelus. Ad adipiscing bene dolus neo olim praemitto. Abbas abigo lucidus virtus vulputate. Dignissim dolus ea patria paulatim rusticus secundum turpis. Cogo conventio iriure lobortis si ullamcorper. Diam hendrerit praesent quia typicus vero zelus. Amet comis eu ibidem nunc paratus quibus quis sagaciter.</p>\n<p>At meus nibh nunc. Letalis odio sed. Ad cogo comis gilvus immitto pecus utinam. Commodo consequat euismod. Causa eum hos illum jus oppeto similis suscipit vicis. Aliquip camur hos laoreet lenis premo sed valetudo.</p>\n<p>Abigo aptent ille iustum paratus. Appellatio dolor nibh nunc scisco similis. Augue brevitas commodo consequat jumentum pertineo quis tego. Antehabeo consequat et luctus macto quis. Accumsan decet facilisis ibidem jumentum lenis lobortis mos vereor.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '90',
+            'uid' => '1',
+            'filename' => 'landscape-photography.jpg',
+            'uri' => 'public://news/landscape-photography_0.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '841169',
+            'status' => '1',
+            'timestamp' => '1480673437',
+            'uuid' => '18bb5ccd-e18f-4ea1-9a1a-0f494a4eed86',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '2640',
+            'height' => '1760',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '131',
+        'source' => 'node/101',
+        'alias' => 'news/jugis-os.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '0',
+      'comment_count' => '0',
+      'name' => '',
+      'picture' => '0',
+      'data' => NULL,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '100',
+      'uid' => '0',
+      'title' => 'Patria Persto',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '4f82036a-f45b-40a3-80ae-9b95f05cbb9c',
+      'nid' => '100',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1467111063',
+      'changed' => '1480673594',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'a935a6bf-6a8a-44f8-a9bc-02ff83b2a9ed',
+      'revision_timestamp' => '1480673594',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Acsi caecus hos quia quis scisco suscipit usitas ut valetudo. Gilvus ideo paulatim plaga sagaciter turpis utrum velit.\r\n\r\nConsequat dolor importunus laoreet lenis letalis modo neque vereor zelus. Consequat gravis sed. Aptent hendrerit illum incassum nunc quibus quidne vulputate. Accumsan damnum ideo importunus luptatum pala populus praesent ulciscor vulputate. Accumsan causa eu hendrerit interdico nisl torqueo velit. Antehabeo esse letalis os quae. Bene defui nulla. Abbas abluo dignissim distineo facilisis genitus ludus nibh quadrum ut.\r\n\r\nAcsi adipiscing aptent cui illum inhibeo melior nunc utrum. Consectetuer laoreet ludus neque utrum volutpat. Consequat dolor erat importunus quibus valde. Abluo commoveo lobortis lucidus ludus obruo secundum sudo.\r\n\r\nAbdo aliquip antehabeo defui gilvus lucidus metuo patria refero. Ea haero jus vindico. Camur eros facilisi metuo roto si verto.\r\n\r\nAppellatio jus mauris vereor volutpat. Decet ea fere. Causa enim haero mauris neque quidem quis sagaciter sit voco. Accumsan gilvus in iustum scisco vulpes.\r\n\r\nIncassum metuo praemitto saepius. Abigo blandit immitto jugis luptatum magna torqueo ulciscor vel velit. Acsi commoveo enim lucidus. Commodo eum feugiat quae vel veniam. Eligo meus vero. Cui metuo molior os pala saepius sudo. Abigo at duis iusto ratis rusticus tation venio zelus. Acsi capto laoreet lobortis pertineo probo rusticus torqueo.\r\n\r\nLetalis metuo rusticus. Commoveo jumentum mauris praemitto si suscipit uxor valetudo. Damnum feugiat persto plaga praemitto.\r\n\r\nGemino hendrerit incassum inhibeo persto. Ad ex fere importunus olim utinam. Autem facilisi gilvus humo in praemitto ratis sudo suscipit. Lucidus proprius vereor. Dignissim luctus persto tation vindico. Comis hendrerit iaceo olim. Dolus genitus haero occuro paratus tamen ullamcorper vel. Abbas erat hos loquor obruo odio os quis. Camur dolor et paulatim pertineo tincidunt uxor voco.\r\n\r\nAcsi gemino mauris modo nobis nunc torqueo valde veniam. Humo incassum jugis pecus quae voco. Elit imputo virtus. Accumsan aptent camur eu exputo humo jugis letalis neo tation.\r\n\r\nDignissim eu exerci nunc pala quis voco. Abluo augue dignissim eros nisl nobis ullamcorper utrum vereor.\r\n\r\nAptent ea eros lenis nibh similis validus virtus. Ex iaceo iriure refoveo voco. Abico abluo feugiat minim sed tincidunt typicus valetudo. Antehabeo camur olim premo. Aliquam exputo hendrerit jugis modo neo pneum sit.\r\n\r\n",
+            'summary' => '',
+            'format' => 'plain_text',
+            'safe_value' => "<p>Acsi caecus hos quia quis scisco suscipit usitas ut valetudo. Gilvus ideo paulatim plaga sagaciter turpis utrum velit.</p>\n<p>Consequat dolor importunus laoreet lenis letalis modo neque vereor zelus. Consequat gravis sed. Aptent hendrerit illum incassum nunc quibus quidne vulputate. Accumsan damnum ideo importunus luptatum pala populus praesent ulciscor vulputate. Accumsan causa eu hendrerit interdico nisl torqueo velit. Antehabeo esse letalis os quae. Bene defui nulla. Abbas abluo dignissim distineo facilisis genitus ludus nibh quadrum ut.</p>\n<p>Acsi adipiscing aptent cui illum inhibeo melior nunc utrum. Consectetuer laoreet ludus neque utrum volutpat. Consequat dolor erat importunus quibus valde. Abluo commoveo lobortis lucidus ludus obruo secundum sudo.</p>\n<p>Abdo aliquip antehabeo defui gilvus lucidus metuo patria refero. Ea haero jus vindico. Camur eros facilisi metuo roto si verto.</p>\n<p>Appellatio jus mauris vereor volutpat. Decet ea fere. Causa enim haero mauris neque quidem quis sagaciter sit voco. Accumsan gilvus in iustum scisco vulpes.</p>\n<p>Incassum metuo praemitto saepius. Abigo blandit immitto jugis luptatum magna torqueo ulciscor vel velit. Acsi commoveo enim lucidus. Commodo eum feugiat quae vel veniam. Eligo meus vero. Cui metuo molior os pala saepius sudo. Abigo at duis iusto ratis rusticus tation venio zelus. Acsi capto laoreet lobortis pertineo probo rusticus torqueo.</p>\n<p>Letalis metuo rusticus. Commoveo jumentum mauris praemitto si suscipit uxor valetudo. Damnum feugiat persto plaga praemitto.</p>\n<p>Gemino hendrerit incassum inhibeo persto. Ad ex fere importunus olim utinam. Autem facilisi gilvus humo in praemitto ratis sudo suscipit. Lucidus proprius vereor. Dignissim luctus persto tation vindico. Comis hendrerit iaceo olim. Dolus genitus haero occuro paratus tamen ullamcorper vel. Abbas erat hos loquor obruo odio os quis. Camur dolor et paulatim pertineo tincidunt uxor voco.</p>\n<p>Acsi gemino mauris modo nobis nunc torqueo valde veniam. Humo incassum jugis pecus quae voco. Elit imputo virtus. Accumsan aptent camur eu exputo humo jugis letalis neo tation.</p>\n<p>Dignissim eu exerci nunc pala quis voco. Abluo augue dignissim eros nisl nobis ullamcorper utrum vereor.</p>\n<p>Aptent ea eros lenis nibh similis validus virtus. Ex iaceo iriure refoveo voco. Abico abluo feugiat minim sed tincidunt typicus valetudo. Antehabeo camur olim premo. Aliquam exputo hendrerit jugis modo neo pneum sit.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '89',
+            'uid' => '1',
+            'filename' => 'landscape-photography-tutorial-mtcook-after.jpg',
+            'uri' => 'public://news/landscape-photography-tutorial-mtcook-after_0.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '308653',
+            'status' => '1',
+            'timestamp' => '1480673423',
+            'uuid' => 'b139bb2e-4564-4360-9aed-7cc5db20f77e',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '1020',
+            'height' => '681',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '129',
+        'source' => 'node/100',
+        'alias' => 'news/patria-persto.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '0',
+      'comment_count' => '0',
+      'name' => '',
+      'picture' => '0',
+      'data' => NULL,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '99',
+      'uid' => '0',
+      'title' => 'Hendrerit',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '86a30b2d-0af9-4d18-aef8-8ca15c764d93',
+      'nid' => '99',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1478408894',
+      'changed' => '1480673590',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '40922988-4a32-4142-923f-db15e8487a36',
+      'revision_timestamp' => '1480673590',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Causa dignissim ille modo nobis proprius volutpat. Cogo odio te. Duis et facilisi modo singularis tation. Cogo damnum diam neque pagus paratus praemitto ulciscor verto. Acsi haero probo suscipere. Ad enim modo nibh praesent roto singularis sino vulpes. Abico erat gravis letalis luptatum molior quadrum tation. Aliquam minim scisco tum vel.\r\n\r\nCogo lobortis olim quae refoveo secundum tincidunt verto. Brevitas eum gilvus quis suscipere. Abluo autem quadrum ratis scisco suscipere utinam.\r\n\r\nFere laoreet pecus valde. Dignissim importunus paulatim. Adipiscing bene capto lobortis modo ut. Dignissim lucidus minim nibh quibus si volutpat. Abdo accumsan dolore. Amet in incassum mos neque qui sed suscipit te zelus. Cogo enim mauris neo ullamcorper utrum. Abbas illum sagaciter ut. Aliquam amet caecus consequat exerci iriure neo populus probo vero.\r\n\r\nFere ille lobortis nisl pertineo praesent valde. Abico capto dolor jumentum paratus refero utrum virtus ymo. Commoveo gravis hendrerit saluto tincidunt volutpat. Abbas at incassum lobortis luptatum occuro ratis tamen uxor.\r\n\r\nAmet commodo illum os refoveo scisco singularis tincidunt utinam vicis. Dolor dolore esca genitus oppeto paratus saluto utrum valde. Causa dolus exputo nisl pecus sagaciter singularis tation vindico. Consectetuer eum gilvus lobortis luctus rusticus saepius.\r\n\r\nAccumsan cogo odio tincidunt. Autem conventio dolore ex in paratus sagaciter tum vulpes. Abbas autem facilisis iaceo iusto paulatim qui. Abluo amet brevitas elit euismod exputo importunus nulla rusticus turpis.\r\n\r\nAbluo ille sino. Exputo laoreet metuo populus rusticus. Consectetuer hos laoreet luptatum meus. Aptent comis commoveo lobortis pala plaga ullamcorper. Aliquip defui humo luctus modo molior pneum quia vulpes. Acsi augue autem praemitto refoveo saluto vulpes. Ad erat incassum veniam. Brevitas causa cogo comis dignissim duis iriure meus praemitto utinam.\r\n\r\nConsectetuer dolor eros feugiat huic lobortis pecus si turpis. Adipiscing jumentum macto nobis occuro pneum probo scisco wisi. Laoreet letalis nulla saepius usitas veniam. Conventio ludus qui. Abdo aliquam at hendrerit scisco torqueo ullamcorper vulputate. Appellatio gravis huic humo populus quidne velit voco vulputate. Amet eum hos mos proprius validus. Autem diam facilisis gemino natu paratus refoveo vero virtus ymo.\r\n\r\nElit fere similis tation turpis. Eligo facilisi feugiat nunc refero veniam. Aliquip decet erat facilisis iriure luptatum paratus vel.\r\n\r\nIlle iriure paratus refero sed. Adipiscing modo occuro te. Camur commoveo enim lucidus luctus sagaciter tincidunt valde validus ymo. Camur exputo iaceo loquor magna. Abico brevitas defui metuo neque praemitto tamen utrum. Amet dignissim gilvus modo saepius. Defui enim erat euismod ibidem odio pneum rusticus usitas. Fere gravis nobis obruo quis vicis.\r\n\r\n",
+            'summary' => '',
+            'format' => 'plain_text',
+            'safe_value' => "<p>Causa dignissim ille modo nobis proprius volutpat. Cogo odio te. Duis et facilisi modo singularis tation. Cogo damnum diam neque pagus paratus praemitto ulciscor verto. Acsi haero probo suscipere. Ad enim modo nibh praesent roto singularis sino vulpes. Abico erat gravis letalis luptatum molior quadrum tation. Aliquam minim scisco tum vel.</p>\n<p>Cogo lobortis olim quae refoveo secundum tincidunt verto. Brevitas eum gilvus quis suscipere. Abluo autem quadrum ratis scisco suscipere utinam.</p>\n<p>Fere laoreet pecus valde. Dignissim importunus paulatim. Adipiscing bene capto lobortis modo ut. Dignissim lucidus minim nibh quibus si volutpat. Abdo accumsan dolore. Amet in incassum mos neque qui sed suscipit te zelus. Cogo enim mauris neo ullamcorper utrum. Abbas illum sagaciter ut. Aliquam amet caecus consequat exerci iriure neo populus probo vero.</p>\n<p>Fere ille lobortis nisl pertineo praesent valde. Abico capto dolor jumentum paratus refero utrum virtus ymo. Commoveo gravis hendrerit saluto tincidunt volutpat. Abbas at incassum lobortis luptatum occuro ratis tamen uxor.</p>\n<p>Amet commodo illum os refoveo scisco singularis tincidunt utinam vicis. Dolor dolore esca genitus oppeto paratus saluto utrum valde. Causa dolus exputo nisl pecus sagaciter singularis tation vindico. Consectetuer eum gilvus lobortis luctus rusticus saepius.</p>\n<p>Accumsan cogo odio tincidunt. Autem conventio dolore ex in paratus sagaciter tum vulpes. Abbas autem facilisis iaceo iusto paulatim qui. Abluo amet brevitas elit euismod exputo importunus nulla rusticus turpis.</p>\n<p>Abluo ille sino. Exputo laoreet metuo populus rusticus. Consectetuer hos laoreet luptatum meus. Aptent comis commoveo lobortis pala plaga ullamcorper. Aliquip defui humo luctus modo molior pneum quia vulpes. Acsi augue autem praemitto refoveo saluto vulpes. Ad erat incassum veniam. Brevitas causa cogo comis dignissim duis iriure meus praemitto utinam.</p>\n<p>Consectetuer dolor eros feugiat huic lobortis pecus si turpis. Adipiscing jumentum macto nobis occuro pneum probo scisco wisi. Laoreet letalis nulla saepius usitas veniam. Conventio ludus qui. Abdo aliquam at hendrerit scisco torqueo ullamcorper vulputate. Appellatio gravis huic humo populus quidne velit voco vulputate. Amet eum hos mos proprius validus. Autem diam facilisis gemino natu paratus refoveo vero virtus ymo.</p>\n<p>Elit fere similis tation turpis. Eligo facilisi feugiat nunc refero veniam. Aliquip decet erat facilisis iriure luptatum paratus vel.</p>\n<p>Ille iriure paratus refero sed. Adipiscing modo occuro te. Camur commoveo enim lucidus luctus sagaciter tincidunt valde validus ymo. Camur exputo iaceo loquor magna. Abico brevitas defui metuo neque praemitto tamen utrum. Amet dignissim gilvus modo saepius. Defui enim erat euismod ibidem odio pneum rusticus usitas. Fere gravis nobis obruo quis vicis.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '88',
+            'uid' => '1',
+            'filename' => 'landscape-wallpaper-16.jpg',
+            'uri' => 'public://news/landscape-wallpaper-16_0.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '344331',
+            'status' => '1',
+            'timestamp' => '1480673412',
+            'uuid' => '8c37228c-1004-4a3c-8028-2c123c7f90a9',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '1920',
+            'height' => '1080',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '127',
+        'source' => 'node/99',
+        'alias' => 'news/hendrerit.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '0',
+      'comment_count' => '0',
+      'name' => '',
+      'picture' => '0',
+      'data' => NULL,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '98',
+      'uid' => '1',
+      'title' => 'Elit Fere Pagus',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '5d37ac0f-596b-475f-9260-002b7d58960f',
+      'nid' => '98',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1456706279',
+      'changed' => '1480673584',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '4e8dd2f3-e78b-4dc4-adb4-82fba11ec869',
+      'revision_timestamp' => '1480673584',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Abdo abico rusticus valde veniam. Appellatio dolus facilisi iriure tincidunt ut vero ymo. Commoveo decet duis importunus imputo mos quidem refero si. Exerci quidne valde zelus. Bene duis lobortis premo quis sit tamen ulciscor virtus volutpat. Haero illum laoreet premo singularis uxor. Melior oppeto quibus secundum ulciscor vel velit.\r\n\r\nAbdo bene ea luptatum sit vulputate. Abigo elit esse eum nisl pagus quae si vulputate. Caecus cui lucidus vindico. Augue caecus camur causa comis eros genitus loquor nunc occuro. Decet neo neque. Ille iustum patria singularis.\r\n\r\nAmet dolor in loquor persto saepius. Cui gravis hendrerit quadrum utrum zelus. Brevitas feugiat incassum interdico luctus macto premo rusticus veniam zelus. Elit euismod occuro ratis sed tego. Dignissim modo nunc. Abbas eligo in jumentum letalis meus ratis si uxor. Amet odio utinam. Commoveo eligo ex meus pala quae refero saluto si venio. Ad luctus os tincidunt velit virtus.\r\n\r\nGemino sagaciter vicis. Abluo adipiscing eros pagus te. Duis facilisi nulla si utrum. Aptent autem elit eros et gravis quidem sudo usitas voco.\r\n\r\nDistineo duis facilisi genitus ille melior molior nutus quis uxor. Consequat eligo et tego venio voco. Appellatio gravis inhibeo jugis loquor quidne tego. Abbas adipiscing refero sed. Capto causa esca et facilisi lucidus molior virtus. Autem dolus eum natu paulatim tamen vulputate. Abluo iustum mauris. Antehabeo premo valetudo. Decet esse fere inhibeo luctus modo nunc quia sed.\r\n\r\nAbluo acsi adipiscing aliquip ille pneum tamen validus. At cogo consectetuer haero roto sudo. At incassum sit. Accumsan lenis macto magna. Caecus natu torqueo. Augue caecus ex iaceo in inhibeo interdico odio quadrum ut.\r\n\r\nAccumsan haero hos odio plaga singularis suscipit te. Consequat diam hendrerit. Esse neo quia quidem quis utrum. Brevitas proprius similis verto. Consequat defui elit enim eu ludus nibh quis ulciscor. Abbas caecus exputo fere hos nulla vero. Antehabeo decet distineo probo wisi. Diam dolus luctus nulla os premo valetudo verto vindico.\r\n\r\nRatis usitas voco. Abbas immitto utrum ymo. Acsi tum vereor. Distineo molior proprius singularis. Defui erat genitus. Abico decet defui metuo modo os te. Blandit damnum duis hendrerit ludus mos nulla tincidunt. Appellatio diam jus nulla.\r\n\r\nAbico imputo luctus. Adipiscing cogo esca ex haero meus nisl refero scisco sit.\r\n\r\n",
+            'summary' => '',
+            'format' => 'plain_text',
+            'safe_value' => "<p>Abdo abico rusticus valde veniam. Appellatio dolus facilisi iriure tincidunt ut vero ymo. Commoveo decet duis importunus imputo mos quidem refero si. Exerci quidne valde zelus. Bene duis lobortis premo quis sit tamen ulciscor virtus volutpat. Haero illum laoreet premo singularis uxor. Melior oppeto quibus secundum ulciscor vel velit.</p>\n<p>Abdo bene ea luptatum sit vulputate. Abigo elit esse eum nisl pagus quae si vulputate. Caecus cui lucidus vindico. Augue caecus camur causa comis eros genitus loquor nunc occuro. Decet neo neque. Ille iustum patria singularis.</p>\n<p>Amet dolor in loquor persto saepius. Cui gravis hendrerit quadrum utrum zelus. Brevitas feugiat incassum interdico luctus macto premo rusticus veniam zelus. Elit euismod occuro ratis sed tego. Dignissim modo nunc. Abbas eligo in jumentum letalis meus ratis si uxor. Amet odio utinam. Commoveo eligo ex meus pala quae refero saluto si venio. Ad luctus os tincidunt velit virtus.</p>\n<p>Gemino sagaciter vicis. Abluo adipiscing eros pagus te. Duis facilisi nulla si utrum. Aptent autem elit eros et gravis quidem sudo usitas voco.</p>\n<p>Distineo duis facilisi genitus ille melior molior nutus quis uxor. Consequat eligo et tego venio voco. Appellatio gravis inhibeo jugis loquor quidne tego. Abbas adipiscing refero sed. Capto causa esca et facilisi lucidus molior virtus. Autem dolus eum natu paulatim tamen vulputate. Abluo iustum mauris. Antehabeo premo valetudo. Decet esse fere inhibeo luctus modo nunc quia sed.</p>\n<p>Abluo acsi adipiscing aliquip ille pneum tamen validus. At cogo consectetuer haero roto sudo. At incassum sit. Accumsan lenis macto magna. Caecus natu torqueo. Augue caecus ex iaceo in inhibeo interdico odio quadrum ut.</p>\n<p>Accumsan haero hos odio plaga singularis suscipit te. Consequat diam hendrerit. Esse neo quia quidem quis utrum. Brevitas proprius similis verto. Consequat defui elit enim eu ludus nibh quis ulciscor. Abbas caecus exputo fere hos nulla vero. Antehabeo decet distineo probo wisi. Diam dolus luctus nulla os premo valetudo verto vindico.</p>\n<p>Ratis usitas voco. Abbas immitto utrum ymo. Acsi tum vereor. Distineo molior proprius singularis. Defui erat genitus. Abico decet defui metuo modo os te. Blandit damnum duis hendrerit ludus mos nulla tincidunt. Appellatio diam jus nulla.</p>\n<p>Abico imputo luctus. Adipiscing cogo esca ex haero meus nisl refero scisco sit.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '99',
+            'uid' => '1',
+            'filename' => 'landscape-photography-tutorial-mtcook-after.jpg',
+            'uri' => 'public://news/landscape-photography-tutorial-mtcook-after_2.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '308653',
+            'status' => '1',
+            'timestamp' => '1480673584',
+            'uuid' => 'b666898a-aac4-44ab-8bab-9a4319b7edb4',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '1020',
+            'height' => '681',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '125',
+        'source' => 'node/98',
+        'alias' => 'news/elit-fere-pagus.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '97',
+      'uid' => '0',
+      'title' => 'Lobortis Paulatim Quia',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '632d5cbe-3c83-4bf3-a497-d5ada5db4110',
+      'nid' => '97',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1450711939',
+      'changed' => '1480673565',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '045acdbf-d1c5-40a0-b1ed-71065ccce60f',
+      'revision_timestamp' => '1480673565',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Diam ille proprius saluto torqueo veniam. Abdo macto proprius quibus. Abluo consectetuer eligo erat esca humo paratus typicus vereor. Conventio nibh obruo singularis. At autem diam natu pneum quadrum. Dolus illum os quidem turpis ulciscor utinam.\r\n\r\nGemino ille laoreet luptatum mauris nobis pertineo roto valde. Abigo aptent brevitas dolus hos lenis meus pala quae typicus. Capto dolore ex haero huic ludus molior proprius validus vulpes. Conventio distineo iriure laoreet ludus nimis nutus praemitto veniam ymo.\r\n\r\nAt facilisi praemitto refoveo. Abluo nobis persto voco. Abdo antehabeo gilvus probo validus vindico. Haero lucidus luptatum quidne.\r\n\r\nGravis hos meus ratis. Damnum gilvus ille letalis minim sit vero. Comis diam nutus ut. Dolor macto olim tum. Appellatio damnum eum hendrerit hos importunus premo te. Amet damnum exerci iusto neque nobis tego. Augue brevitas gilvus importunus torqueo. Ex hos nobis paulatim scisco. Abico quibus quidem scisco ullamcorper vicis vulpes. Brevitas ea ludus modo natu sagaciter vicis.\r\n\r\nMetuo patria quadrum refoveo venio. Gravis huic premo saluto volutpat. Consectetuer eros ideo laoreet premo quia utinam utrum vereor. Illum singularis suscipere ut uxor. At importunus pagus. Genitus incassum quis. Aliquip euismod genitus incassum jus luctus. Comis defui ea eum haero jus probo quis sagaciter similis. Capto commodo consequat exputo mos pala plaga te ymo. Duis jus lucidus nunc oppeto quia ulciscor.\r\n\r\nCamur causa lenis ulciscor. Facilisi genitus nulla sagaciter sudo usitas. Duis esse exputo paulatim persto rusticus. Elit esca in qui. Ad damnum diam eu imputo lenis nunc similis tation.\r\n\r\nEsca meus persto praemitto typicus vicis. At brevitas dolore facilisi sagaciter sed ullamcorper. Acsi capto facilisis ibidem nibh quibus sino utinam volutpat. Abigo iaceo incassum laoreet sit turpis. Appellatio comis consequat pala.\r\n\r\nDuis secundum utrum. Dignissim erat iaceo vereor. Amet ea natu paratus ratis ullamcorper uxor. Jugis nutus verto. Decet quia wisi. Aliquip immitto lenis lucidus nutus pertineo praesent ullamcorper. Conventio nunc tincidunt. Exputo turpis virtus wisi. Esca populus quadrum quidem refoveo sagaciter singularis torqueo. At capto torqueo. Autem elit eros eu eum tum vereor vindico.\r\n\r\nAccumsan damnum diam illum luctus praemitto similis wisi. Luctus nibh probo. Abico brevitas commodo consequat esca sudo. Abigo causa conventio. Abico genitus iusto. Augue facilisis neque quidne. Hendrerit luptatum occuro proprius refero wisi. Aptent commodo defui letalis nunc pertineo suscipit tamen vindico.\r\n\r\n",
+            'summary' => '',
+            'format' => 'plain_text',
+            'safe_value' => "<p>Diam ille proprius saluto torqueo veniam. Abdo macto proprius quibus. Abluo consectetuer eligo erat esca humo paratus typicus vereor. Conventio nibh obruo singularis. At autem diam natu pneum quadrum. Dolus illum os quidem turpis ulciscor utinam.</p>\n<p>Gemino ille laoreet luptatum mauris nobis pertineo roto valde. Abigo aptent brevitas dolus hos lenis meus pala quae typicus. Capto dolore ex haero huic ludus molior proprius validus vulpes. Conventio distineo iriure laoreet ludus nimis nutus praemitto veniam ymo.</p>\n<p>At facilisi praemitto refoveo. Abluo nobis persto voco. Abdo antehabeo gilvus probo validus vindico. Haero lucidus luptatum quidne.</p>\n<p>Gravis hos meus ratis. Damnum gilvus ille letalis minim sit vero. Comis diam nutus ut. Dolor macto olim tum. Appellatio damnum eum hendrerit hos importunus premo te. Amet damnum exerci iusto neque nobis tego. Augue brevitas gilvus importunus torqueo. Ex hos nobis paulatim scisco. Abico quibus quidem scisco ullamcorper vicis vulpes. Brevitas ea ludus modo natu sagaciter vicis.</p>\n<p>Metuo patria quadrum refoveo venio. Gravis huic premo saluto volutpat. Consectetuer eros ideo laoreet premo quia utinam utrum vereor. Illum singularis suscipere ut uxor. At importunus pagus. Genitus incassum quis. Aliquip euismod genitus incassum jus luctus. Comis defui ea eum haero jus probo quis sagaciter similis. Capto commodo consequat exputo mos pala plaga te ymo. Duis jus lucidus nunc oppeto quia ulciscor.</p>\n<p>Camur causa lenis ulciscor. Facilisi genitus nulla sagaciter sudo usitas. Duis esse exputo paulatim persto rusticus. Elit esca in qui. Ad damnum diam eu imputo lenis nunc similis tation.</p>\n<p>Esca meus persto praemitto typicus vicis. At brevitas dolore facilisi sagaciter sed ullamcorper. Acsi capto facilisis ibidem nibh quibus sino utinam volutpat. Abigo iaceo incassum laoreet sit turpis. Appellatio comis consequat pala.</p>\n<p>Duis secundum utrum. Dignissim erat iaceo vereor. Amet ea natu paratus ratis ullamcorper uxor. Jugis nutus verto. Decet quia wisi. Aliquip immitto lenis lucidus nutus pertineo praesent ullamcorper. Conventio nunc tincidunt. Exputo turpis virtus wisi. Esca populus quadrum quidem refoveo sagaciter singularis torqueo. At capto torqueo. Autem elit eros eu eum tum vereor vindico.</p>\n<p>Accumsan damnum diam illum luctus praemitto similis wisi. Luctus nibh probo. Abico brevitas commodo consequat esca sudo. Abigo causa conventio. Abico genitus iusto. Augue facilisis neque quidne. Hendrerit luptatum occuro proprius refero wisi. Aptent commodo defui letalis nunc pertineo suscipit tamen vindico.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '97',
+            'uid' => '1',
+            'filename' => 'landscape-photography.jpg',
+            'uri' => 'public://news/landscape-photography_1.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '841169',
+            'status' => '1',
+            'timestamp' => '1480673565',
+            'uuid' => '7abb9b1c-91b4-464d-b7b1-2f312db30773',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '2640',
+            'height' => '1760',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '123',
+        'source' => 'node/97',
+        'alias' => 'news/lobortis-paulatim-quia.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '0',
+      'comment_count' => '0',
+      'name' => '',
+      'picture' => '0',
+      'data' => NULL,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '96',
+      'uid' => '0',
+      'title' => 'Abluo',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '49c0ff75-20cb-4a5f-8351-6573155fe3e6',
+      'nid' => '96',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1478299537',
+      'changed' => '1480673547',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '895ec798-def8-4a7e-acfe-7934a11f2127',
+      'revision_timestamp' => '1480673547',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Abbas caecus dolus erat facilisi immitto proprius saepius suscipit vulputate. Modo quis verto. Acsi gravis immitto loquor neque nostrud quia secundum voco. Antehabeo et exputo facilisi patria vereor. Bene erat eu ille iusto odio pagus rusticus saluto. Abigo causa commodo consequat dignissim dolus mauris valetudo volutpat.\r\n\r\nAbluo jugis jumentum jus obruo sed suscipit voco zelus. Abbas duis eligo luctus obruo sino. Augue esca iusto neo nisl patria praemitto si venio. Eligo neque nunc suscipere te tincidunt. At autem diam dignissim et eu lenis pertineo roto sagaciter. Illum incassum neque obruo ratis si ullamcorper volutpat. Bene fere iusto pala pecus vindico vulputate.\r\n\r\nConsequat esca olim pneum probo secundum tego vero. Gravis iaceo mos saepius. Ea suscipit tamen. Adipiscing esca haero lobortis sed valde. Dolor dolus haero immitto meus minim persto quae tamen ymo. Antehabeo comis eu ideo jus nimis probo sino ut. Acsi blandit decet iriure jus. Commoveo loquor rusticus voco. Hendrerit inhibeo iustum nobis nutus pecus premo vicis vindico voco. Abico ad dolor huic jus.\r\n\r\nCapto iriure jugis vel volutpat. Adipiscing bene eum exerci jumentum magna natu sagaciter scisco. Accumsan eros feugiat gravis paulatim sagaciter secundum suscipere utinam virtus.\r\n\r\nAbigo acsi comis commoveo duis genitus ille patria tincidunt ullamcorper. Ad consequat eros fere imputo meus plaga volutpat vulpes.\r\n\r\nDefui hendrerit immitto letalis obruo olim sit utinam wisi. Damnum defui vindico. Conventio eligo facilisis gemino natu vicis.\r\n\r\nAbigo genitus ibidem minim odio qui sit validus. Cui immitto neo paratus tego. Damnum letalis turpis ullamcorper. Commodo consequat zelus. Abigo aliquam capto saluto. Consequat dolor elit hendrerit hos iriure molior quidem saluto turpis. Accumsan causa dolus genitus te venio vindico. Enim nostrud usitas.\r\n\r\n",
+            'summary' => '',
+            'format' => 'full_html',
+            'safe_value' => "<p>Abbas caecus dolus erat facilisi immitto proprius saepius suscipit vulputate. Modo quis verto. Acsi gravis immitto loquor neque nostrud quia secundum voco. Antehabeo et exputo facilisi patria vereor. Bene erat eu ille iusto odio pagus rusticus saluto. Abigo causa commodo consequat dignissim dolus mauris valetudo volutpat.</p>\n<p>Abluo jugis jumentum jus obruo sed suscipit voco zelus. Abbas duis eligo luctus obruo sino. Augue esca iusto neo nisl patria praemitto si venio. Eligo neque nunc suscipere te tincidunt. At autem diam dignissim et eu lenis pertineo roto sagaciter. Illum incassum neque obruo ratis si ullamcorper volutpat. Bene fere iusto pala pecus vindico vulputate.</p>\n<p>Consequat esca olim pneum probo secundum tego vero. Gravis iaceo mos saepius. Ea suscipit tamen. Adipiscing esca haero lobortis sed valde. Dolor dolus haero immitto meus minim persto quae tamen ymo. Antehabeo comis eu ideo jus nimis probo sino ut. Acsi blandit decet iriure jus. Commoveo loquor rusticus voco. Hendrerit inhibeo iustum nobis nutus pecus premo vicis vindico voco. Abico ad dolor huic jus.</p>\n<p>Capto iriure jugis vel volutpat. Adipiscing bene eum exerci jumentum magna natu sagaciter scisco. Accumsan eros feugiat gravis paulatim sagaciter secundum suscipere utinam virtus.</p>\n<p>Abigo acsi comis commoveo duis genitus ille patria tincidunt ullamcorper. Ad consequat eros fere imputo meus plaga volutpat vulpes.</p>\n<p>Defui hendrerit immitto letalis obruo olim sit utinam wisi. Damnum defui vindico. Conventio eligo facilisis gemino natu vicis.</p>\n<p>Abigo genitus ibidem minim odio qui sit validus. Cui immitto neo paratus tego. Damnum letalis turpis ullamcorper. Commodo consequat zelus. Abigo aliquam capto saluto. Consequat dolor elit hendrerit hos iriure molior quidem saluto turpis. Accumsan causa dolus genitus te venio vindico. Enim nostrud usitas.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '85',
+            'uid' => '1',
+            'filename' => 'cam-about-city-see.jpg',
+            'uri' => 'public://news/cam-about-city-see.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '48098',
+            'status' => '1',
+            'timestamp' => '1480673375',
+            'uuid' => '8abd77ea-f2c0-4365-89de-9968f5145f5d',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '847',
+            'height' => '376',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '121',
+        'source' => 'node/96',
+        'alias' => 'news/abluo.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '0',
+      'comment_count' => '0',
+      'name' => '',
+      'picture' => '0',
+      'data' => NULL,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '95',
+      'uid' => '0',
+      'title' => 'Feugiat Laoreet Quidne Saluto',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '37eacfb5-1422-4f6c-92a8-3036400b3068',
+      'nid' => '95',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1457240694',
+      'changed' => '1480673544',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '892901ff-04bf-453f-b1b0-377f3e4d74d8',
+      'revision_timestamp' => '1480673544',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Patria pertineo secundum. Aliquip fere jumentum macto mauris melior scisco sed. Abdo aliquip cogo commoveo enim eu pala ulciscor vulpes. Acsi aliquip bene meus pala populus saluto veniam vindico voco. Consectetuer cui eu metuo nunc nutus sit. Capto cogo commodo consequat dignissim duis jus scisco tation. Ex iriure jugis praesent refero sed sit voco wisi ymo.\r\n\r\nAbico rusticus similis. Appellatio dolor haero immitto luptatum modo pertineo sino utinam volutpat. Caecus diam hos laoreet meus mos saepius velit ymo. Aptent causa consectetuer dolus esca haero imputo nostrud typicus valde. Conventio diam nunc patria praesent quae quia secundum utrum uxor.\r\n\r\nAntehabeo consectetuer duis humo ideo premo quae typicus wisi. Augue brevitas nutus roto sino sudo valde vulpes. At facilisi importunus iusto ut validus. At duis erat hendrerit nibh nulla praemitto sagaciter tincidunt. Caecus consectetuer elit incassum luctus nutus persto saepius tation. Inhibeo minim nostrud.\r\n\r\nCaecus plaga quis typicus usitas validus veniam. Brevitas cogo cui dolore mauris olim. Camur capto luctus meus populus ulciscor.\r\n\r\nBene blandit dolor haero importunus melior persto turpis. Cogo commoveo diam feugiat haero lucidus pneum quadrum refero vereor. Capto dignissim ea gravis mauris os pala patria. Abico acsi exputo imputo inhibeo jus luptatum os similis velit.\r\n\r\nComis conventio iusto nobis nutus quibus. Adipiscing cui damnum eligo immitto interdico iriure jus tation.\r\n\r\nDolore importunus loquor sagaciter. Aliquam duis fere melior olim refoveo roto. Abico comis consectetuer et in meus nutus praemitto validus. Et luptatum macto.\r\n\r\n",
+            'summary' => '',
+            'format' => 'plain_text',
+            'safe_value' => "<p>Patria pertineo secundum. Aliquip fere jumentum macto mauris melior scisco sed. Abdo aliquip cogo commoveo enim eu pala ulciscor vulpes. Acsi aliquip bene meus pala populus saluto veniam vindico voco. Consectetuer cui eu metuo nunc nutus sit. Capto cogo commodo consequat dignissim duis jus scisco tation. Ex iriure jugis praesent refero sed sit voco wisi ymo.</p>\n<p>Abico rusticus similis. Appellatio dolor haero immitto luptatum modo pertineo sino utinam volutpat. Caecus diam hos laoreet meus mos saepius velit ymo. Aptent causa consectetuer dolus esca haero imputo nostrud typicus valde. Conventio diam nunc patria praesent quae quia secundum utrum uxor.</p>\n<p>Antehabeo consectetuer duis humo ideo premo quae typicus wisi. Augue brevitas nutus roto sino sudo valde vulpes. At facilisi importunus iusto ut validus. At duis erat hendrerit nibh nulla praemitto sagaciter tincidunt. Caecus consectetuer elit incassum luctus nutus persto saepius tation. Inhibeo minim nostrud.</p>\n<p>Caecus plaga quis typicus usitas validus veniam. Brevitas cogo cui dolore mauris olim. Camur capto luctus meus populus ulciscor.</p>\n<p>Bene blandit dolor haero importunus melior persto turpis. Cogo commoveo diam feugiat haero lucidus pneum quadrum refero vereor. Capto dignissim ea gravis mauris os pala patria. Abico acsi exputo imputo inhibeo jus luptatum os similis velit.</p>\n<p>Comis conventio iusto nobis nutus quibus. Adipiscing cui damnum eligo immitto interdico iriure jus tation.</p>\n<p>Dolore importunus loquor sagaciter. Aliquam duis fere melior olim refoveo roto. Abico comis consectetuer et in meus nutus praemitto validus. Et luptatum macto.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '84',
+            'uid' => '1',
+            'filename' => 'dusk-city-wallpaper-wallpaper-3.jpg',
+            'uri' => 'public://news/dusk-city-wallpaper-wallpaper-3.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '1032857',
+            'status' => '1',
+            'timestamp' => '1480673363',
+            'uuid' => 'ff7056ae-4367-44cc-ab94-60a66521e94a',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '2560',
+            'height' => '1600',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '119',
+        'source' => 'node/95',
+        'alias' => 'news/feugiat-laoreet-quidne-saluto.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '0',
+      'comment_count' => '0',
+      'name' => '',
+      'picture' => '0',
+      'data' => NULL,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '93',
+      'uid' => '1',
+      'title' => 'Acsi',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '160e4eae-c495-43ca-85dc-6d477c415a5b',
+      'nid' => '93',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1458578233',
+      'changed' => '1480673539',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '578bde00-6759-4420-9180-59f4fd22e386',
+      'revision_timestamp' => '1480673539',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Conventio defui esse humo melior rusticus tego veniam. Eum laoreet quidem si sudo. Erat jugis neo nunc sino. Ex gravis importunus iusto lenis secundum suscipere ulciscor vereor.\r\n\r\nImmitto iriure neo obruo quadrum. Ad elit persto. Aliquam augue bene blandit causa enim esca hendrerit utrum vel. Camur comis esse quibus vulputate. Facilisi olim persto praemitto suscipere usitas. Jus plaga probo. Antehabeo dolor euismod ideo incassum jumentum magna minim nobis virtus.\r\n\r\nAbdo abico causa loquor pala premo sed turpis typicus vicis. Amet appellatio illum laoreet natu suscipere typicus vel wisi.\r\n\r\nHumo illum oppeto tego ullamcorper. Distineo populus quidem. Exerci luctus metuo pala quidem rusticus tamen vel zelus. Augue defui huic loquor. Causa dignissim facilisi immitto loquor similis tation. Iustum obruo suscipit tation. Antehabeo cogo commoveo defui erat euismod nulla pagus virtus. Decet ludus modo quibus tego. Huic jumentum neo olim pagus quidem secundum usitas valde voco.\r\n\r\nBlandit neo quidne rusticus. Abigo fere humo natu te. Camur conventio duis feugiat iustum jumentum quadrum. Ad euismod fere illum importunus modo. Abico brevitas ideo in loquor metuo obruo praemitto volutpat vulpes. Damnum defui gilvus ibidem immitto natu nimis quae saluto voco.\r\n\r\nAbigo fere melior roto vereor vicis. Iustum jugis refero. Abbas damnum molior sit wisi. Erat ludus persto utrum vel. Adipiscing camur esse et feugiat incassum modo occuro paulatim volutpat. Blandit importunus metuo patria utinam.\r\n\r\nAcsi blandit cui exputo huic tation. Illum obruo pagus. Decet huic ille lucidus nimis quadrum singularis turpis vindico. At cui ex nibh sudo torqueo utrum. Amet autem diam et ludus olim. Antehabeo macto natu nunc persto probo proprius venio. Causa dolus eligo esca feugiat laoreet nibh patria saluto utrum.\r\n\r\n",
+            'summary' => '',
+            'format' => 'plain_text',
+            'safe_value' => "<p>Conventio defui esse humo melior rusticus tego veniam. Eum laoreet quidem si sudo. Erat jugis neo nunc sino. Ex gravis importunus iusto lenis secundum suscipere ulciscor vereor.</p>\n<p>Immitto iriure neo obruo quadrum. Ad elit persto. Aliquam augue bene blandit causa enim esca hendrerit utrum vel. Camur comis esse quibus vulputate. Facilisi olim persto praemitto suscipere usitas. Jus plaga probo. Antehabeo dolor euismod ideo incassum jumentum magna minim nobis virtus.</p>\n<p>Abdo abico causa loquor pala premo sed turpis typicus vicis. Amet appellatio illum laoreet natu suscipere typicus vel wisi.</p>\n<p>Humo illum oppeto tego ullamcorper. Distineo populus quidem. Exerci luctus metuo pala quidem rusticus tamen vel zelus. Augue defui huic loquor. Causa dignissim facilisi immitto loquor similis tation. Iustum obruo suscipit tation. Antehabeo cogo commoveo defui erat euismod nulla pagus virtus. Decet ludus modo quibus tego. Huic jumentum neo olim pagus quidem secundum usitas valde voco.</p>\n<p>Blandit neo quidne rusticus. Abigo fere humo natu te. Camur conventio duis feugiat iustum jumentum quadrum. Ad euismod fere illum importunus modo. Abico brevitas ideo in loquor metuo obruo praemitto volutpat vulpes. Damnum defui gilvus ibidem immitto natu nimis quae saluto voco.</p>\n<p>Abigo fere melior roto vereor vicis. Iustum jugis refero. Abbas damnum molior sit wisi. Erat ludus persto utrum vel. Adipiscing camur esse et feugiat incassum modo occuro paulatim volutpat. Blandit importunus metuo patria utinam.</p>\n<p>Acsi blandit cui exputo huic tation. Illum obruo pagus. Decet huic ille lucidus nimis quadrum singularis turpis vindico. At cui ex nibh sudo torqueo utrum. Amet autem diam et ludus olim. Antehabeo macto natu nunc persto probo proprius venio. Causa dolus eligo esca feugiat laoreet nibh patria saluto utrum.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '95',
+            'uid' => '1',
+            'filename' => 'cam-about-city-see.jpg',
+            'uri' => 'public://news/cam-about-city-see_0.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '48098',
+            'status' => '1',
+            'timestamp' => '1480673539',
+            'uuid' => 'f36d2c9e-49ca-4b6f-be8b-e72d823aec45',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '847',
+            'height' => '376',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '115',
+        'source' => 'node/93',
+        'alias' => 'news/acsi.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '92',
+      'uid' => '0',
+      'title' => 'Brevitas Camur Gilvus Wisi',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '74a3d386-b403-49a0-952e-a86e17df89d9',
+      'nid' => '92',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1463463580',
+      'changed' => '1480673527',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '7e9b94e6-df64-473b-bb49-4764a2f8a1a6',
+      'revision_timestamp' => '1480673527',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Ideo quidne utinam. Facilisis nunc pala tego. Abbas gravis pecus tamen valetudo.\r\n\r\nBlandit et euismod interdico luctus nimis praemitto ut utinam. Abbas capto luctus plaga ulciscor. Causa eros nibh obruo quidem roto rusticus usitas. Abdo acsi defui in incassum macto obruo tamen.\r\n\r\n",
+            'summary' => '',
+            'format' => 'full_html',
+            'safe_value' => "<p>Ideo quidne utinam. Facilisis nunc pala tego. Abbas gravis pecus tamen valetudo.</p>\n<p>Blandit et euismod interdico luctus nimis praemitto ut utinam. Abbas capto luctus plaga ulciscor. Causa eros nibh obruo quidem roto rusticus usitas. Abdo acsi defui in incassum macto obruo tamen.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '94',
+            'uid' => '1',
+            'filename' => 'dusk-city-wallpaper-wallpaper-3.jpg',
+            'uri' => 'public://news/dusk-city-wallpaper-wallpaper-3_0.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '1032857',
+            'status' => '1',
+            'timestamp' => '1480673527',
+            'uuid' => '3bd5ff04-4b4f-4fb6-9605-a662101e8869',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '2560',
+            'height' => '1600',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '113',
+        'source' => 'node/92',
+        'alias' => 'news/brevitas-camur-gilvus-wisi.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '0',
+      'comment_count' => '0',
+      'name' => '',
+      'picture' => '0',
+      'data' => NULL,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '94',
+      'uid' => '0',
+      'title' => 'Enim Erat Interdico',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '7b7e1083-bc7e-4f95-9235-d19b8c6cf766',
+      'nid' => '94',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1465705227',
+      'changed' => '1480673513',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '2d5441c0-f509-45b7-83fa-d29d1ca8d4e6',
+      'revision_timestamp' => '1480673513',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Accumsan cui duis feugiat nulla quis refero typicus usitas. Ad imputo macto metuo neo proprius quadrum sagaciter valetudo. Aptent consequat luptatum populus tamen te. Diam elit eu tego. Abluo aptent consequat gilvus premo proprius validus. Adipiscing exerci nimis oppeto si. Aliquip caecus importunus in macto persto vindico virtus.\r\n\r\nIaceo modo neque roto tamen valetudo. Augue camur ex nunc suscipere velit. Abdo cui ea eligo illum lucidus torqueo. Amet antehabeo damnum defui magna nibh populus proprius torqueo. Blandit distineo eum lenis luptatum occuro olim.\r\n\r\nEu scisco sudo. Dolore erat immitto iusto quadrum saepius sino utrum verto. Interdico torqueo utrum. Causa dolore facilisis immitto sed. Consectetuer euismod immitto iriure oppeto pecus ratis usitas.\r\n\r\nAbbas hendrerit lobortis nulla olim premo ymo. Abdo abluo comis distineo incassum meus mos nobis quadrum. Accumsan hendrerit probo vel. Duis ratis ulciscor. Abico duis ibidem modo pecus quidne ratis suscipere vereor.\r\n\r\nConsequat eligo facilisis letalis pagus secundum typicus vicis. Antehabeo augue eum haero ille nulla qui roto valetudo vulpes. Euismod imputo ludus sino. Abbas comis pagus.\r\n\r\nIdeo loquor premo rusticus venio virtus. Brevitas commodo euismod illum inhibeo oppeto pagus persto qui quia. Molior neo sudo vulputate. Acsi conventio defui illum neque premo utinam utrum. Abluo et fere importunus pertineo refero secundum tation usitas volutpat.\r\n\r\nConsectetuer gemino ille vulpes. Aliquip camur cui damnum eu humo lobortis paratus tamen utinam. Caecus cui illum tincidunt. Abico jus pecus saluto sed torqueo turpis.\r\n\r\nIaceo jumentum lenis te virtus. Eros fere neque utinam. Camur commoveo nibh oppeto secundum. Diam erat lucidus proprius refero sit. Exerci haero modo molior pneum praesent similis tamen vereor vindico.\r\n\r\nAbico brevitas fere ideo luptatum mauris mos obruo ratis. Nutus quis veniam. Acsi conventio humo modo pala quidne saepius. Abbas jus paratus. Augue causa eros humo immitto. Abico eu nunc ulciscor utinam velit voco.\r\n\r\nCamur comis decet elit in jumentum nisl tamen vindico. Adipiscing enim luptatum praesent refero suscipere. Augue damnum gemino iusto sed.\r\n\r\n",
+            'summary' => '',
+            'format' => 'full_html',
+            'safe_value' => "<p>Accumsan cui duis feugiat nulla quis refero typicus usitas. Ad imputo macto metuo neo proprius quadrum sagaciter valetudo. Aptent consequat luptatum populus tamen te. Diam elit eu tego. Abluo aptent consequat gilvus premo proprius validus. Adipiscing exerci nimis oppeto si. Aliquip caecus importunus in macto persto vindico virtus.</p>\n<p>Iaceo modo neque roto tamen valetudo. Augue camur ex nunc suscipere velit. Abdo cui ea eligo illum lucidus torqueo. Amet antehabeo damnum defui magna nibh populus proprius torqueo. Blandit distineo eum lenis luptatum occuro olim.</p>\n<p>Eu scisco sudo. Dolore erat immitto iusto quadrum saepius sino utrum verto. Interdico torqueo utrum. Causa dolore facilisis immitto sed. Consectetuer euismod immitto iriure oppeto pecus ratis usitas.</p>\n<p>Abbas hendrerit lobortis nulla olim premo ymo. Abdo abluo comis distineo incassum meus mos nobis quadrum. Accumsan hendrerit probo vel. Duis ratis ulciscor. Abico duis ibidem modo pecus quidne ratis suscipere vereor.</p>\n<p>Consequat eligo facilisis letalis pagus secundum typicus vicis. Antehabeo augue eum haero ille nulla qui roto valetudo vulpes. Euismod imputo ludus sino. Abbas comis pagus.</p>\n<p>Ideo loquor premo rusticus venio virtus. Brevitas commodo euismod illum inhibeo oppeto pagus persto qui quia. Molior neo sudo vulputate. Acsi conventio defui illum neque premo utinam utrum. Abluo et fere importunus pertineo refero secundum tation usitas volutpat.</p>\n<p>Consectetuer gemino ille vulpes. Aliquip camur cui damnum eu humo lobortis paratus tamen utinam. Caecus cui illum tincidunt. Abico jus pecus saluto sed torqueo turpis.</p>\n<p>Iaceo jumentum lenis te virtus. Eros fere neque utinam. Camur commoveo nibh oppeto secundum. Diam erat lucidus proprius refero sit. Exerci haero modo molior pneum praesent similis tamen vereor vindico.</p>\n<p>Abico brevitas fere ideo luptatum mauris mos obruo ratis. Nutus quis veniam. Acsi conventio humo modo pala quidne saepius. Abbas jus paratus. Augue causa eros humo immitto. Abico eu nunc ulciscor utinam velit voco.</p>\n<p>Camur comis decet elit in jumentum nisl tamen vindico. Adipiscing enim luptatum praesent refero suscipere. Augue damnum gemino iusto sed.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '81',
+            'uid' => '1',
+            'filename' => 'landscape-photography.jpg',
+            'uri' => 'public://news/landscape-photography.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '841169',
+            'status' => '1',
+            'timestamp' => '1480673321',
+            'uuid' => '29c4a1eb-f2a9-4f00-8cf9-7da432e87875',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '2640',
+            'height' => '1760',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '117',
+        'source' => 'node/94',
+        'alias' => 'news/enim-erat-interdico.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '0',
+      'comment_count' => '0',
+      'name' => '',
+      'picture' => '0',
+      'data' => NULL,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '91',
+      'uid' => '0',
+      'title' => 'Cogo Dolor',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '72da4b6d-3471-4b80-95af-f66521bc114e',
+      'nid' => '91',
+      'type' => 'article',
+      'language' => 'pl',
+      'created' => '1462109240',
+      'changed' => '1480673509',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'e03c77d3-fd6e-4ac2-9c10-daf8eb20b0b3',
+      'revision_timestamp' => '1480673509',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Exerci gravis praesent usitas ut valetudo vel virtus. Esse persto tamen. Cui gilvus jugis pala quibus velit. Illum modo pertineo si sino zelus. Abico inhibeo jugis jumentum macto neo nisl paulatim valetudo ymo. Feugiat jus pala ratis tum validus. Damnum eum interdico iustum nimis premo utrum valetudo. Eros gemino jus persto te tego vulpes.\r\n\r\nCapto dolor facilisi gravis olim patria saepius scisco sudo vulputate. Accumsan diam quibus saepius si. Praesent quibus veniam. Aliquam ex probo utinam. Bene cogo commodo consequat haero validus. Dolus euismod importunus incassum jumentum oppeto quia. Abigo ex oppeto.\r\n\r\nDignissim ille nobis quae velit. Dolus nibh vulputate. Brevitas ideo iustum nisl quibus torqueo. Abico aliquip causa facilisi fere luctus olim saepius valde vicis. Antehabeo pneum turpis. Acsi quadrum quidne. Consectetuer erat exerci mauris praemitto praesent probo virtus. Consequat refoveo suscipit.\r\n\r\nAliquip capto diam incassum mos probo secundum sino tum ymo. Abico gemino neque quae. Abluo commodo consequat et humo letalis nutus quadrum volutpat. Meus natu occuro. Aliquip conventio hos immitto neo. Exputo ille ratis suscipere. Abigo aliquip capto commoveo genitus ideo obruo praesent premo. Adipiscing hendrerit nibh patria. Iriure melior nibh.\r\n\r\nHuic nimis praesent. Abbas lucidus ludus occuro praesent. Ad dignissim lenis paratus paulatim valetudo. Blandit neque occuro oppeto persto quadrum. Abluo consectetuer importunus imputo nostrud os scisco similis. Aliquam damnum genitus hendrerit in interdico molior similis tum zelus. Decet exerci importunus letalis si vel velit.\r\n\r\nCausa et os. Aliquip commoveo imputo incassum refero tation typicus. Acsi eros exerci gravis hendrerit incassum pala probo ratis vel. Caecus causa decet ea feugiat ibidem luptatum uxor virtus.\r\n\r\nAliquam appellatio capto nobis oppeto quae quibus. Esca lobortis melior modo vulpes vulputate. Blandit gravis importunus interdico loquor ludus olim persto typicus valde. Abico bene dignissim iaceo in luctus nibh quidem suscipere tamen.\r\n\r\n",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Exerci gravis praesent usitas ut valetudo vel virtus. Esse persto tamen. Cui gilvus jugis pala quibus velit. Illum modo pertineo si sino zelus. Abico inhibeo jugis jumentum macto neo nisl paulatim valetudo ymo. Feugiat jus pala ratis tum validus. Damnum eum interdico iustum nimis premo utrum valetudo. Eros gemino jus persto te tego vulpes.</p>\n<p>Capto dolor facilisi gravis olim patria saepius scisco sudo vulputate. Accumsan diam quibus saepius si. Praesent quibus veniam. Aliquam ex probo utinam. Bene cogo commodo consequat haero validus. Dolus euismod importunus incassum jumentum oppeto quia. Abigo ex oppeto.</p>\n<p>Dignissim ille nobis quae velit. Dolus nibh vulputate. Brevitas ideo iustum nisl quibus torqueo. Abico aliquip causa facilisi fere luctus olim saepius valde vicis. Antehabeo pneum turpis. Acsi quadrum quidne. Consectetuer erat exerci mauris praemitto praesent probo virtus. Consequat refoveo suscipit.</p>\n<p>Aliquip capto diam incassum mos probo secundum sino tum ymo. Abico gemino neque quae. Abluo commodo consequat et humo letalis nutus quadrum volutpat. Meus natu occuro. Aliquip conventio hos immitto neo. Exputo ille ratis suscipere. Abigo aliquip capto commoveo genitus ideo obruo praesent premo. Adipiscing hendrerit nibh patria. Iriure melior nibh.</p>\n<p>Huic nimis praesent. Abbas lucidus ludus occuro praesent. Ad dignissim lenis paratus paulatim valetudo. Blandit neque occuro oppeto persto quadrum. Abluo consectetuer importunus imputo nostrud os scisco similis. Aliquam damnum genitus hendrerit in interdico molior similis tum zelus. Decet exerci importunus letalis si vel velit.</p>\n<p>Causa et os. Aliquip commoveo imputo incassum refero tation typicus. Acsi eros exerci gravis hendrerit incassum pala probo ratis vel. Caecus causa decet ea feugiat ibidem luptatum uxor virtus.</p>\n<p>Aliquam appellatio capto nobis oppeto quae quibus. Esca lobortis melior modo vulpes vulputate. Blandit gravis importunus interdico loquor ludus olim persto typicus valde. Abico bene dignissim iaceo in luctus nibh quidem suscipere tamen.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'field_tags' => array(),
+      'field_image' => array(
+        'und' => array(
+          array(
+            'fid' => '80',
+            'uid' => '1',
+            'filename' => 'landscape-photography-tutorial-mtcook-after.jpg',
+            'uri' => 'public://news/landscape-photography-tutorial-mtcook-after.jpg',
+            'filemime' => 'image/jpeg',
+            'filesize' => '308653',
+            'status' => '1',
+            'timestamp' => '1480673308',
+            'uuid' => '4290d1ff-dc00-4760-b218-e03ecd4858d3',
+            'rdf_mapping' => array(),
+            'alt' => '',
+            'title' => '',
+            'width' => '1020',
+            'height' => '681',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'path' => array(
+        'pid' => '111',
+        'source' => 'node/91',
+        'alias' => 'news/cogo-dolor.html',
+        'language' => 'pl',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1480672622',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '0',
+      'comment_count' => '0',
+      'name' => '',
+      'picture' => '0',
+      'data' => NULL,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+)
